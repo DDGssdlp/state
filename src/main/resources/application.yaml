@@ -1,0 +1,12 @@
+ipAddr: 101.200.140.80
+
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://${ipAddr}:3306/mall?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+
+  mapper-locations: classpath:/mapper/*.xml
